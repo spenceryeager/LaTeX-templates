@@ -1,0 +1,21 @@
+# gitignore for files generated when
+# compiling a TeX document or PDF 
+# using TeXstudio. 
+# Also will include image files that
+# may reside in the document folder
+
+# generated files
+*.aux
+*.bbl
+*.bcf
+*.log
+*.pdf
+*.run.xml
+*.synctex.gz
+
+# image files
+*.png
+*.jpg
+*.jpeg
+*.gif
+
