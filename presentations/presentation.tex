@@ -1,17 +1,23 @@
 \documentclass{beamer}
+\usepackage[style=chem-acs]{biblatex}
 \usetheme{Boadilla}
 \usepackage{graphicx}
 \usepackage{setspace}
 \usepackage{xcolor}
 \graphicspath{{./img/}}
 
+% bibliography related
+\setbeamertemplate{bibliography item}{\insertbiblabel}
+\addbibresource{04Oct2021_echem.bib}
 
+% beamer color definitions
 \definecolor{arizonared}{RGB}{171,5,32}
 \definecolor{arizonablue}{RGB}{21,36,74}
 \definecolor{bloom}{RGB}{239,64,86}
 \definecolor{warmgray}{RGB}{244,237,229}
 \definecolor{BurntOrange}{RGB}{255,166,77}
 
+% setting beamer color
 \setbeamercolor{title}{fg=arizonablue}
 \setbeamercolor{author}{fg=arizonablue}
 \setbeamercolor{institute}{fg=arizonablue}
@@ -27,7 +33,6 @@
 \setbeamertemplate{itemize items}[triangle]
 
 \title[The University of Arizona]{TITLE}
-\subtitle{DATE}
 \author{Spencer Yeager}
 \institute[]{SUBGROUP/GROUP}
 \date{DATE}
@@ -41,4 +46,11 @@
 	\begin{frame}
 		\frametitle{SLIDE TITLE}
 	\end{frame}
+
+% Bibliography
+%	\begin{frame}[allowframebreaks]
+%		\frametitle{References}
+%		\printbibliography
+%	\end{frame}
+
 \end{document}
