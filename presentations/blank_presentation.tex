@@ -1,0 +1,62 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Blank presentation for %
+% quick data displays    %
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{beamer}
+\usepackage[style=chem-acs]{biblatex}
+\usetheme{boxes}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{xcolor}
+\graphicspath{{./img/}}
+
+% bibliography related
+\setbeamertemplate{bibliography item}{\insertbiblabel}
+\addbibresource{enter_bib.bib}
+	% bibliography font size
+\AtBeginBibliography{\small}
+
+% beamer color definitions
+\definecolor{arizonared}{RGB}{171,5,32}
+\definecolor{arizonablue}{RGB}{21,36,74}
+\definecolor{bloom}{RGB}{239,64,86}
+\definecolor{warmgray}{RGB}{244,237,229}
+\definecolor{BurntOrange}{RGB}{255,166,77}
+
+% setting beamer color
+\setbeamercolor{title}{fg=arizonablue}
+\setbeamercolor{author}{fg=arizonablue}
+\setbeamercolor{institute}{fg=arizonablue}
+\setbeamercolor{date}{fg=arizonablue}
+\setbeamercolor{author in head/foot}{fg=warmgray, bg=arizonared}
+\setbeamercolor{title in head/foot}{fg=warmgray, bg=arizonared}
+\setbeamercolor{date in head/foot}{fg=arizonablue, bg=warmgray}
+\setbeamercolor{structure}{fg=arizonablue}
+\setbeamercolor{frametitle}{fg=arizonablue}
+
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{enumerate items}[square]
+\setbeamertemplate{itemize items}[triangle]
+
+\title{TITLE}
+
+\date{DATE}
+
+\setstretch{1.25}
+\begin{document}
+	\begin{frame}
+		\titlepage
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{SLIDE TITLE}
+	\end{frame}
+
+% Bibliography
+%	\begin{frame}[allowframebreaks]
+%		\frametitle{References}
+%		\printbibliography
+%	\end{frame}
+
+\end{document}
