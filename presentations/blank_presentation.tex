@@ -6,7 +6,7 @@
 \documentclass{beamer}
 \usepackage[style=chem-acs]{biblatex}
 \usetheme{boxes}
-\usepackage{graphicx}
+\usepackage{helvet}
 \usepackage{setspace}
 \usepackage{xcolor}
 \graphicspath{{./img/}}
@@ -16,6 +16,9 @@
 \addbibresource{enter_bib.bib}
 	% bibliography font size
 \AtBeginBibliography{\small}
+% adding footcite
+\let\footnoterule\relax
+\newcommand\SmallFont{\fontsize{5pt}{3}\selectfont}
 
 % beamer color definitions
 \definecolor{arizonared}{RGB}{171,5,32}
